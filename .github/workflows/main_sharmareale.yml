@@ -3,6 +3,16 @@
 
 name: Build and deploy ASP.Net Core app to Azure Web App - SharmaRealE
 
+defaults:
+  run:
+    working-directory: C:\Users\cam10\OneDrive\Documents\GitHub\Sharmaesthetics-Real-Estate\Real
+    
+env:
+  AZURE_WEBAPP_NAME: (SharmaRealE) # set this to the name of your Azure Web App
+  AZURE_WEBAPP_PACKAGE_PATH: 'C:\Users\cam10\OneDrive\Documents\GitHub\Sharmaesthetics-Real-Estate\Real' # set this to the path to your web app project, defaults to the repository root
+  DOTNET_VERSION: '6.0' # set this to the .NET Core version to use
+
+
 on:
   push:
     branches:
